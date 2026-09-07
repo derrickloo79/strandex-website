@@ -80,40 +80,4 @@
       if (event.target === lightbox) closeLightbox();
     });
   }
-
-  /* ------------------------------ Contact form ------------------------------ */
-
-  var form = document.getElementById('contact-form');
-  var status = document.getElementById('form-status');
-
-  if (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      status.textContent = 'Sending…';
-      status.removeAttribute('data-state');
-
-      var formData = new FormData(form);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' }
-      })
-        .then(function (response) {
-          if (response.ok) {
-            status.textContent =
-              "Thanks — we've received your enquiry and will get back to you within 1–2 business days.";
-            status.setAttribute('data-state', 'success');
-            form.reset();
-          } else {
-            throw new Error('Form submission failed');
-          }
-        })
-        .catch(function () {
-          status.textContent =
-            "That didn't go through. Check your details and try again, or email us directly.";
-          status.setAttribute('data-state', 'error');
-        });
-    });
-  }
 })();

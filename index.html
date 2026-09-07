@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<a class="skip-link" href="#contact">Skip to contact form</a>
+<a class="skip-link" href="#contact">Skip to contact</a>
 
 <header class="site-nav">
   <div class="wrap nav-inner">
@@ -27,7 +27,7 @@
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a href="#contact" class="btn btn-primary btn-nav">Get in touch</a>
+      <button type="button" class="btn btn-primary btn-nav" data-tally-open="Zj7Joa" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get in touch</button>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -78,7 +78,7 @@
         on Singapore's construction sites — assessed against ISO 4309 and backed by our
         <span class="placeholder-flag" title="Confirm certification status before launch">[bizSAFE Level 3 certification / bizSAFE Level 3 accreditation, in progress]</span>.
       </p>
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <button type="button" class="btn btn-primary" data-tally-open="Zj7Joa" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get in touch</button>
     </div>
   </section>
 
@@ -227,40 +227,13 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" required autocomplete="organization">
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
-          </div>
-          <div class="field">
-            <label for="enquiry-type">Enquiry type</label>
-            <select id="enquiry-type" name="enquiry_type" required>
-              <option value="">Select one</option>
-              <option value="Wire Rope Inspection">Wire Rope Inspection</option>
-              <option value="Lifting Gear Inspection">Lifting Gear Inspection</option>
-              <option value="General Enquiry">General Enquiry</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send enquiry</button>
-
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <div class="contact-cta">
+          <p>
+            Tell us what needs inspecting — wire ropes, slings, or rigging — and we'll get
+            back to you within <span class="placeholder-flag" title="Confirm before launch">[1–2 business days]</span>.
+          </p>
+          <button type="button" class="btn btn-primary" data-tally-open="Zj7Joa" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get in touch</button>
+        </div>
 
         <div class="direct-contact">
           <h3>Direct contact</h3>
@@ -290,6 +263,7 @@
   <div class="lightbox-content" id="lightbox-content"></div>
 </div>
 
+<script async src="https://tally.so/widgets/embed.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

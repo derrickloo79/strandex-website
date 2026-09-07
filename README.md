@@ -17,7 +17,7 @@ Then open http://localhost:8000.
 ```
 index.html        all six sections + nav + footer
 css/style.css      design tokens, layout, components
-js/main.js         gallery lightbox, contact form submit
+js/main.js         gallery lightbox, nav dropdown toggle
 ```
 
 ## What's placeholder right now
@@ -39,9 +39,11 @@ tooltip) is a placeholder from the plan — do not treat it as real before launc
    operators, rigging suppliers) since no client logos or permissions were supplied. If
    Strandex wants the logo-grid version (Option A) instead, swap the `.sector-list` in
    `#clients` for an `<img>` grid once logos + written permission are in hand.
-5. **Contact form** — `action="https://formspree.io/f/YOUR_FORM_ID"` in `index.html` is a
-   placeholder. Sign up at formspree.io (or web3forms.com), create a form, and swap in
-   the real endpoint. No backend is otherwise required.
+5. **Contact form** — every "Get in touch" button (nav, hero, contact section) opens a
+   Tally popup via `data-tally-open="Zj7Joa"` (form: https://tally.so/r/Zj7Joa), loaded
+   by the `tally.so/widgets/embed.js` script at the bottom of `index.html`. The Name /
+   Company / Email / Phone / Enquiry type / Message fields from the plan live in the
+   Tally form itself, not in this repo — edit them at tally.so if they need to change.
 6. **Direct contact details, footer, UEN, address** — all still `[bracketed]`.
 7. **Headline** — shipped with Option A, "Every strand, accounted for." (the plan's
    recommended default). Options B and C are in the plan (§3.1) if a different tone is

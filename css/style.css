@@ -509,50 +509,16 @@ button { font-family: inherit; }
   }
 }
 
-.contact-form {
+.contact-cta {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
+  align-content: start;
+  max-width: var(--measure);
 }
 
-.field {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.field label {
-  font-size: var(--fs-sm);
-  color: var(--color-ink);
-}
-
-.field input,
-.field select,
-.field textarea {
-  font-family: var(--font-body);
-  /* Never dips below 1rem/16px — smaller triggers an unwanted zoom on iOS Safari. */
-  font-size: clamp(1rem, 0.98rem + 0.1vw, 1.05rem);
-  padding: 0.65em 0.75em;
-  border: 1px solid var(--color-steel);
-  border-radius: 2px;
-  background: var(--color-paper);
-  color: var(--color-ink);
-}
-
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  border-color: var(--color-ink);
-}
-
-.contact-form .btn {
+.contact-cta .btn {
   justify-self: start;
 }
-
-.form-status {
-  font-size: var(--fs-sm);
-  min-height: 1.5em;
-}
-.form-status[data-state="success"] { color: #2f5c3a; }
-.form-status[data-state="error"] { color: var(--color-oxide); }
 
 .direct-contact h3 {
   font-size: var(--fs-lg);
